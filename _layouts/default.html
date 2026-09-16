@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
-  <title>{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="preload" href="{{ '/assets/fonts/fraunces.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://analytics.tstieh.de" crossorigin>
+  <script type="module" src="{{ '/assets/messung.js' | relative_url }}"></script>
 </head>
 <body>
   <div class="side">
@@ -18,6 +20,7 @@
   </header>
   <footer class="colophon">
     This totally not 100% vibecoded website was brought to you by <a href="https://github.com/Raindancer118">Raindancer118</a>.
+    <a class="datenschutz" href="{{ '/datenschutz.html' | relative_url }}">Datenschutz</a>
   </footer>
   </div>
   <main class="quotes">

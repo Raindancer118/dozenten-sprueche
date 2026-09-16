@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    paths: [".github/scripts/**", ".github/workflows/tests.yml"]
+    paths: [".github/scripts/**", ".github/tests/**", "assets/*.js", ".github/workflows/tests.yml"]
   pull_request:
 
 jobs:
@@ -15,3 +15,7 @@ jobs:
           python-version: "3.12"
       - run: python -m unittest -v
         working-directory: .github/scripts
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test .github/tests/messung.test.js
