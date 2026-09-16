@@ -36,6 +36,12 @@ class EscapeTest(unittest.TestCase):
             "&lt;script&gt;&#123;&#123; site &#125;&#125;&lt;/script&gt; &amp; &#123;% raw %&#125;",
         )
 
+    def test_neutralises_markdown_links_and_images(self):
+        result = escape("[klick](javascript:alert(1)) ![x](javascript:alert(2))")
+        self.assertNotIn("[", result)
+        self.assertNotIn("]", result)
+        self.assertEqual(result, "&#91;klick&#93;(javascript:alert(1)) !&#91;x&#93;(javascript:alert(2))")
+
     def test_multiline_becomes_single_list_item(self):
         self.assertEqual(escape("a\n\nb"), "a<br>b")
 

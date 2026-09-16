@@ -29,6 +29,8 @@ def escape(text):
     escaped = html.escape("<br>".join(lines), quote=False)
     escaped = escaped.replace("&lt;br&gt;", "<br>")
     escaped = escaped.replace("{", "&#123;").replace("}", "&#125;")
+    # Ohne eckige Klammern keine Links/Bilder, also auch keine javascript:-URLs
+    escaped = escaped.replace("[", "&#91;").replace("]", "&#93;")
     # Block-Syntax am Zeilenanfang (#, >, -, 1.) würde den Listenpunkt sprengen
     return re.sub(r"^([#>+\-*]|\d+\.)", lambda m: "".join(f"&#{ord(c)};" for c in m.group(1)), escaped)
 
