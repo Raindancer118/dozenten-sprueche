@@ -36,3 +36,4 @@
 - Wer glaubt, dass Unternehmer wirklich etwas unternehmen glaubt auch, dass Zitronenfalter Zitronen falten.
 - Der Kunde steht im Mittelpunkt und damit im Weg
 - Der gröste Lumb im ganzen Land ist und bleibt der Denunziant
+- Trinken von Reden ist nicht das wasser
