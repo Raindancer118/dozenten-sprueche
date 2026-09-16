@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
+  <div class="side">
   <header class="masthead">
     <h1>Ludolph's<br><em>Sprüche</em></h1>
     <p class="tagline">{{ site.description }}</p>
     <a class="stamp" href="https://github.com/Raindancer118/dozenten-sprueche/issues/new?template=spruch.yml">Spruch eintragen</a>
   </header>
-  <main class="quotes">
-    {% assign parts = content | split: "<!-- sprueche -->" %}{{ parts | last }}
-  </main>
   <footer class="colophon">
     This totally not 100% vibecoded website was brought to you by <a href="https://github.com/Raindancer118">Raindancer118</a>.
   </footer>
+  </div>
+  <main class="quotes">
+    {% assign parts = content | split: "<!-- sprueche -->" %}{{ parts | last }}
+  </main>
 </body>
 </html>
