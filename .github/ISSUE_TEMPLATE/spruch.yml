@@ -1,0 +1,13 @@
+name: Spruch eintragen
+description: Einen neuen Dozenten-Spruch zur Sammlung hinzufügen
+title: "Neuer Spruch"
+labels: ["spruch"]
+body:
+  - type: textarea
+    id: spruch
+    attributes:
+      label: Spruch
+      description: Möglichst wörtlich. Wird automatisch in die Liste übernommen, das Issue schließt sich danach von selbst.
+      placeholder: "Das kommt in der Klausur dran."
+    validations:
+      required: true
