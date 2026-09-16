@@ -46,6 +46,7 @@ body {
   font-kerning: normal;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  align-content: start;
   gap: 3rem;
   padding: clamp(1.5rem, 5vw, 4rem);
 }
@@ -142,6 +143,18 @@ body::before {
   font-variant-numeric: tabular-nums;
   color: var(--muted);
 }
+
+.colophon {
+  grid-column: 1 / -1;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: .8rem;
+  color: var(--muted);
+}
+
+.colophon a { color: var(--ink); text-underline-offset: .2em; }
+.colophon a:hover { color: var(--accent); }
 
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
