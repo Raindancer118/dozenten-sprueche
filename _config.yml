@@ -1,5 +1,5 @@
-title: Dozenten-Sprüche
-description: Gesammelte Sprüche unseres Dozenten
-theme: jekyll-theme-minimal
+title: Ludolph's Sprüche
+description: Klausurrelevant oder so.
 exclude:
   - .github
+  - Project.md
