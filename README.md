@@ -27,7 +27,6 @@
 - Think different, stay foolish.
 - No risk, no fun.
 - Das einzige, was ich weiß, ist das, dass ich gar nichts weiß.
-- Too big to fail
 - Heute ist der erste Tag vom Rest des Lebens
 - Die Wahrheit muss man sich nicht merken.
 - Legal, illegal, scheiß-egal!
