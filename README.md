@@ -37,3 +37,4 @@
 - Der gröste Lumb im ganzen Land ist und bleibt der Denunziant
 - Immer schön viel trinken, aber von Wasser war nie die Rede
 - Kaufen Sie Gold
+- Die Krise kommt
