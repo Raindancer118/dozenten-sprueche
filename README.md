@@ -4,4 +4,3 @@ Gesammelte Sprüche unseres Dozenten. **[➕ Spruch eintragen](https://github.co
 
 ## Sprüche
 
-- Testspruch – wird gleich wieder entfernt
