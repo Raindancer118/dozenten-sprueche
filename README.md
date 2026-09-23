@@ -38,3 +38,4 @@
 - Immer schön viel trinken, aber von Wasser war nie die Rede
 - Kaufen Sie Gold
 - Die Krise kommt
+- Working Capital ist das Management des Working Capitals
